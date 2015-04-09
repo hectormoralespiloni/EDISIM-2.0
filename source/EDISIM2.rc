@@ -1,0 +1,287 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Mexican) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESM)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MEXICAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "&Archivo"
+    BEGIN
+        MENUITEM "Nuevo",                       ID_ARCHIVO_NUEVO
+        MENUITEM "Abrir...",                    ID_ARCHIVO_ABRIR
+        MENUITEM SEPARATOR
+        MENUITEM "Guardar",                     ID_ARCHIVO_GUARDAR
+        MENUITEM "Guardar Como...",             ID_ARCHIVO_GUARDARCOMO
+        MENUITEM SEPARATOR
+        MENUITEM "Salir",                       ID_ARCHIVO_SALIR
+    END
+    POPUP "&Editor"
+    BEGIN
+        POPUP "Piezas"
+        BEGIN
+            MENUITEM "Cubo",                        ID_EDITOR_PIEZA1
+            MENUITEM "Base",                        ID_EDITOR_PIEZA2
+            MENUITEM "Cilindro",                    ID_EDITOR_PIEZA3
+            MENUITEM "Extensión",                   ID_EDITOR_PIEZA4
+            MENUITEM "Pinza",                       ID_EDITOR_PIEZA5
+            MENUITEM "Segmento Largo",              ID_EDITOR_PIEZA6
+            MENUITEM "Cubo con soporte",            ID_EDITOR_PIEZA7
+            MENUITEM "Segmento corto",              ID_EDITOR_PIEZA8
+            MENUITEM "Complemento para pinza",      ID_EDITOR_PIEZA9
+            MENUITEM "Barra deslizante",            ID_EDITOR_PIEZA10
+        END
+        POPUP "Colocar Pieza"
+        BEGIN
+            MENUITEM "Arriba",                      ID_EDITOR_COLOCARPIEZA_ARRIBA
+
+            MENUITEM "Derecha",                     ID_EDITOR_COLOCARPIEZA_DERECHA
+
+        END
+        MENUITEM "Borrar Pieza",                ID_EDITOR_BORRARPIEZA
+        MENUITEM "Modo Alambrado",              ID_EDITOR_ALAMBRADO
+        MENUITEM "Coloca Mesa",                 ID_EDITOR_COLOCAMESA
+    END
+    POPUP "&Simulador"
+    BEGIN
+        POPUP "Mover Pieza"
+        BEGIN
+            MENUITEM "Mas",                         ID_SIMULADOR_MOVERPIEZAMAS
+
+            MENUITEM "Menos",                       ID_SIMULADOR_MOVERPIEZAMENOS
+
+        END
+        MENUITEM "Abrir Pinza",                 ID_SIMULADOR_ABRIRPINZA
+        MENUITEM "Cerrar Pinza",                ID_SIMULADOR_CERRARPINZA
+        MENUITEM "Deslizar",                    ID_SIMULADOR_DESLIZAR
+    END
+    POPUP "&Camara"
+    BEGIN
+        MENUITEM "Camara X",                    ID_VISTA_CAMARAX
+        MENUITEM "Camara Y",                    ID_VISTA_CAMARAY
+        MENUITEM "Camara Z",                    ID_VISTA_CAMARAZ
+        MENUITEM SEPARATOR
+        MENUITEM "Camara -X",                   ID_VISTA_CAMARAXNEG
+        MENUITEM "Camara -Y",                   ID_VISTA_CAMARAYNEG
+        MENUITEM "Camara -Z",                   ID_VISTA_CAMARAZNEG
+        MENUITEM SEPARATOR
+        MENUITEM "Derecha",                     ID_CAMARA_DERECHA
+        MENUITEM "Izquierda",                   ID_CAMARA_IZQUIERDA
+        MENUITEM "Arriba",                      ID_CAMARA_ARRIBA
+        MENUITEM "Abajo",                       ID_CAMARA_ABAJO
+        MENUITEM "Acercar",                     ID_VISTA_ACERCAR
+        MENUITEM "Alejar",                      ID_VISTA_ALEJAR
+        MENUITEM SEPARATOR
+        MENUITEM "Origen",                      ID_CAMARA_ORIGEN
+    END
+    POPUP "&Objetos"
+    BEGIN
+        MENUITEM "",                            ID_OBJETOS, GRAYED
+    END
+    POPUP "Ay&uda"
+    BEGIN
+        MENUITEM "Acerca de...",                ID_AYUDA_ACERCADE
+        MENUITEM "Contenido",                   ID_AYUDA_CONTENIDO
+        MENUITEM "Demo...",                     ID_AYUDA_DEMO
+        MENUITEM "Home Page",                   ID_AYUDA_HOMEPAGE
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+BITMAP1                 BITMAP  DISCARDABLE     "toolbar1.bmp"
+BITMAP3                 BITMAP  DISCARDABLE     "piezas.bmp"
+BITMAP2                 BITMAP  DISCARDABLE     "toolbar2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ID_DIALOG_ACERCADE DIALOGEX 0, 0, 191, 122
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Acerca de EDISIM 2.0"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Continuar",IDOK,67,101,50,14,NOT WS_TABSTOP
+    LTEXT           "Héctor Morales Piloni",IDC_STATIC,60,36,68,8
+    LTEXT           "FCC BUAP",IDC_STATIC,21,86,68,8
+    LTEXT           "Puebla, México 2000",IDC_STATIC,99,86,68,8
+    CTEXT           "EDISIM 2.0",IDC_STATIC,6,6,178,11,0,WS_EX_DLGMODALFRAME
+    LTEXT           "JalaVer@yahoo.com",IDC_STATIC,58,49,66,8
+    CTEXT           "Programación y Diseño:",IDC_STATIC,6,22,178,9,NOT 
+                    WS_GROUP
+    LTEXT           "",IDC_STATIC,6,70,178,8,0,WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "ID_DIALOG_ACERCADE", DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 184
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 115
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ARCHIVO_NUEVO        "Crea un archivo nuevo"
+    ID_ARCHIVO_ABRIR        "Abre un archivo existente"
+    ID_ARCHIVO_CERRAR       "Cierra el archivo actual"
+    ID_ARCHIVO_GUARDAR      "Guarda en disco el robot"
+    ID_ARCHIVO_GUARDARCOMO  "Guarda en disco el robot con un nombre diferente"
+    ID_ARCHIVO_SALIR        "Salir del programa"
+    ID_EDITOR_COLOCARPIEZA  "Coloca una pieza previamente seleccionada"
+    ID_SIMULADOR_MOVERPIEZAMENOS 
+                            "Mueve una pieza del robot en sentido negativo"
+    ID_AYUDA_ACERCADE       "Muestra información del programa"
+    ID_EDITOR_BORRARPIEZA   "Borra la última pieza colocada"
+    ID_SIMULADOR_ABRIRPINZA "Abre la pinza si existe"
+    ID_SIMULADOR_CERRARPINZA "Cierra la pinza si existe"
+    ID_SIMULADOR_DESLIZAR   "Desliza la barra si existe"
+    ID_VISTA_CAMARAY        "Rota la cámara sobre el eje Y"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VISTA_CAMARAZ        "Rota la cámara sobre el eje Z"
+    ID_VISTA_CAMARAX        "Rota la cámara sobre el eje X"
+    ID_VISTA_ALEJAR         "Aleja la camara"
+    ID_AYUDA_DEMO           "Demostración del programa"
+    ID_AYUDA_INDICE         "Muestra el contenido de la ayuda"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDITOR_COLOCARPIEZA_ARRIBA "Coloca la pieza arriba de la anterior"
+    ID_EDITOR_COLOCARPIEZA_DERECHA 
+                            "Coloca la pieza a la derecha de la anterior"
+    ID_VISTA_CAMARAXNEG     "Rota la cámara sobre el eje X en sentido negativo"
+    ID_VISTA_CAMARAYNEG     "Rota la cámara sobre el eje Y en sentido negativo"
+    ID_VISTA_CAMARAZNEG     "Rota la cámara sobre el eje Z en sentido negativo"
+    ID_VISTA_ACERCAR        "Acerca la cámara"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SIMULADOR_MOVERPIEZAMAS "Mueve una pieza del robot"
+    ID_CAMARA_ORIGEN        "Regresa la cámara a su posición original"
+    ID_AYUDA_HOMEPAGE       "Página de internet de EDISIM 2.0"
+    ID_AYUDA_CONTENIDO      "Ayuda del sistema"
+    ID_CAMARA_MOVERX        "Mueve la cámara sobre el eje X"
+    ID_CAMARA_MOVERY        "Mueve la cámara sobre el eje Y"
+    ID_CAMARA_IZQUIERDA     "Mueve la cámara hacia la izquierda"
+    ID_CAMARA_ARRIBA        "Mueve la cámara hacia arriba"
+    ID_CAMARA_ABAJO         "Mueve la cámara hacia abajo"
+    ID_CAMARA_DERECHA       "Mueve la cámara hacia la derecha"
+    ID_EDITOR_PIEZA1        "Selecciona el cubo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDITOR_ALAMBRADO     "Selecciona el tipo de representación final (alambrado o sólido)"
+    ID_EDITOR_COLOCAMESA    "Coloca una mesa y un cubo que pueden ser manipulados por el robot"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDITOR_PIEZA2        "Selecciona la base"
+    ID_EDITOR_PIEZA3        "Selecciona el cilindro"
+    ID_MENUITEM40066        "Selecciona la extensión"
+    ID_EDITOR_PIEZA4        "Selecciona la extensión"
+    ID_EDITOR_PIEZA5        "Selecciona la pinza"
+    ID_MENUITEM40069        "Selecciona el segmento largo"
+    ID_MENUITEM40070        "Selecciona el cubo con soporte"
+    ID_MENUITEM40071        "Selecciona el segmento corto"
+    ID_MENUITEM40072        "Selecciona el complemento para la pinza"
+    ID_MENUITEM40073        "Selecciona la barra deslizante"
+    ID_EDITOR_PIEZA6        "Selecciona el segmento largo"
+    ID_EDITOR_PIEZA7        "Selecciona el cubo con soporte"
+    ID_EDITOR_PIEZA8        "Selecciona el segmento corto"
+    ID_EDITOR_PIEZA9        "Selecciona el complemtno para la pinza"
+    ID_EDITOR_PIEZA10       "Selecciona la barra deslizante"
+END
+
+#endif    // Spanish (Mexican) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
